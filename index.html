@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Pixel Sky Force</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="frame">
+        <header class="hud">
+          <div class="hud-block">
+            <span class="hud-label">SCORE</span>
+            <strong id="score">0</strong>
+          </div>
+          <div class="hud-block">
+            <span class="hud-label">LIFE</span>
+            <strong id="life">3</strong>
+          </div>
+          <div class="hud-block">
+            <span class="hud-label">BOSS</span>
+            <strong id="boss">--</strong>
+          </div>
+        </header>
+
+        <div class="game-shell">
+          <canvas id="game" width="240" height="360" aria-label="shooting game"></canvas>
+
+          <div class="overlay" id="overlay">
+            <div class="panel">
+              <h1 id="overlayTitle">PIXEL SKY FORCE</h1>
+              <p id="overlayLine1">スワイプで自機を動かす</p>
+              <p id="overlayLine2">弾は自動で出続ける</p>
+              <p id="overlayLine3">アイテムを取りながらボスを倒す</p>
+              <button id="startButton" type="button">START</button>
+            </div>
+          </div>
+
+          <div class="toast" id="toast"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./game.js"></script>
+  </body>
+</html>
